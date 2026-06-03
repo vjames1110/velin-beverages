@@ -162,6 +162,19 @@ export default function Hero() {
 
       </div>
 
+      {/* BACKGROUND LIQUID WAVES */}
+
+      <div className="liquid-wave wave1"></div>
+      <div className="liquid-wave wave2"></div>
+
+      {/* BACKGROUND CARBONATION PARTICLE */}
+
+      <div className="particle p1"></div>
+      <div className="particle p2"></div>
+      <div className="particle p3"></div>
+      <div className="particle p4"></div>
+      <div className="particle p5"></div>
+
       {/* BACKGROUND BUBBLES */}
       <div className="bubble b1"></div>
       <div className="bubble b2"></div>
