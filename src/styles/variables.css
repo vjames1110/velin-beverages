@@ -1,0 +1,52 @@
+:root {
+
+  /* COLORS */
+
+  --primary-blue: #0077ff;
+  --secondary-aqua: #00e5c0;
+  --accent-yellow: #ffd500;
+  --highlight-orange: #ff7b00;
+
+  --dark: #081423;
+  --light: #ffffff;
+
+  /* GRADIENTS */
+
+  --hero-gradient:
+    linear-gradient(
+      135deg,
+      #0077ff,
+      #00e5c0
+    );
+
+  --product-gradient:
+    linear-gradient(
+      135deg,
+      #0077ff,
+      #ffd500
+    );
+
+  --glass-bg:
+    rgba(255,255,255,0.15);
+
+  --glass-border:
+    rgba(255,255,255,0.2);
+
+  /* SHADOWS */
+
+  --shadow-soft:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  --shadow-premium:
+    0 20px 50px rgba(0,0,0,0.15);
+
+  /* BORDER */
+
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+
+  /* TRANSITIONS */
+
+  --transition:
+    all 0.35s ease;
+}

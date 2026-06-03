@@ -1,0 +1,71 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{
+ background:#fff;
+ color:#081423;
+ overflow-x:hidden;
+}
+
+a{
+ text-decoration:none;
+ color:inherit;
+}
+
+ul{
+ list-style:none;
+}
+
+img{
+ max-width:100%;
+ display:block;
+}
+
+section{
+ padding:100px 8%;
+}
+
+/* Responsive adjustments for common screen sizes */
+:root{
+	--section-padding-mobile:48px;
+	--section-padding-tablet:72px;
+	--section-padding-desktop:100px;
+}
+
+/* Small phones */
+@media (max-width: 420px){
+	html{ font-size:14px; }
+	body{ overflow-x:hidden; }
+	section{ padding: var(--section-padding-mobile) 6%; }
+}
+
+/* Portrait phones and small tablets */
+@media (min-width:421px) and (max-width:767px){
+	html{ font-size:15px; }
+	section{ padding: var(--section-padding-tablet) 6.5%; }
+}
+
+/* Tablets and small laptops */
+@media (min-width:768px) and (max-width:1024px){
+	html{ font-size:16px; }
+	section{ padding: 80px 7%; }
+}
+
+/* Large screens */
+@media (min-width:1025px){
+	html{ font-size:16px; }
+	section{ padding: var(--section-padding-desktop) 8%; }
+}
+
+/* Ensure images scale well on small screens */
+img{
+	height:auto;
+	max-width:100%;
+}
