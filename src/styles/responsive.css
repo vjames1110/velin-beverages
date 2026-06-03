@@ -46,3 +46,30 @@
  cursor:pointer;
 }
 }
+
+@media(max-width:992px){
+
+.hero{
+  grid-template-columns:1fr;
+  text-align:center;
+  padding-top:120px;
+}
+
+.hero-content h1{
+  font-size:3rem;
+}
+
+.hero-buttons{
+  justify-content:center;
+}
+
+.hero-product{
+  width:280px;
+}
+
+.glow{
+  width:250px;
+  height:250px;
+}
+
+}

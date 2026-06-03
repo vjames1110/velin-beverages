@@ -1,90 +1,291 @@
-.hero{
- min-height:100vh;
+.hero {
+  min-height: 110vh;
 
- display:grid;
- grid-template-columns:
- 1fr 1fr;
+  display: grid;
+  grid-template-columns: 55% 45%;
 
- align-items:center;
+  align-items: center;
 
- padding:0 8%;
+  padding: 0 8%;
+  padding-top: 80px;
 
- background:
- linear-gradient(
- 135deg,
- #0077ff,
- #00e5c0
- );
+  background: linear-gradient(
+    135deg,
+    #0077ff,
+    #00e5c0
+  );
 
- position:relative;
-
- overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-content h1{
- font-size:4rem;
- color:white;
- margin-bottom:20px;
+/* ======================
+   LEFT CONTENT
+====================== */
+
+.hero-content {
+  z-index: 2;
 }
 
-.hero-content p{
- color:white;
- font-size:1.2rem;
- max-width:500px;
- margin-bottom:30px;
+.hero-content h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 25px;
 }
 
-.hero-buttons{
- display:flex;
- gap:15px;
+.hero-content p {
+  color: white;
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin-bottom: 30px;
 }
 
-.hero-buttons button{
- padding:15px 35px;
- border:none;
- border-radius:50px;
- cursor:pointer;
+.hero-buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.hero-image img{
- width:100%;
- max-width:500px;
- animation:
- floating 4s ease infinite;
+.hero-buttons button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
 }
 
-@keyframes floating{
- 50%{
-  transform:
-  translateY(-20px);
- }
+.hero-buttons button:hover {
+  transform: translateY(-3px);
 }
 
-.bubble{
- position:absolute;
- border-radius:50%;
- backdrop-filter:blur(10px);
- background:
- rgba(255,255,255,.2);
+.outline {
+  background: transparent;
+  border: 2px solid white !important;
+  color: white;
 }
 
-.b1{
- width:150px;
- height:150px;
- top:10%;
- right:10%;
+/* ======================
+   RIGHT PRODUCT AREA
+====================== */
+
+.hero-image {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;   /* IMPORTANT FIX */
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 700px;
+
+  padding-top: 60px;
+
+  z-index: 2;
 }
 
-.b2{
- width:100px;
- height:100px;
- bottom:20%;
- left:5%;
+/* ======================
+   PRODUCT GLOW
+====================== */
+
+.glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: 0.55;
+
+  z-index: 1;
+
+  transition: 0.6s ease;
 }
 
-.b3{
- width:70px;
- height:70px;
- top:50%;
- left:45%;
+/* ======================
+   PRODUCT IMAGE
+====================== */
+
+.hero-product {
+  width: 100%;
+  max-width: 520px;
+
+  object-fit: contain;
+
+  position: relative;
+
+  z-index: 3;
+
+  animation: floating 5s ease-in-out infinite;
+
+  /* Glass Border Effect */
+  filter:
+    drop-shadow(0 20px 40px rgba(255,255,255,.15))
+    drop-shadow(0 0 25px rgba(255,255,255,.25));
+
+  transition: .4s ease;
+}
+
+.hero-product:hover {
+  transform: scale(1.03);
+}
+
+/* ======================
+   OPTIONAL GLASS FRAME
+====================== */
+
+.hero-image::before {
+  content: "";
+
+  position: absolute;
+
+  width: 580px;
+  height: 580px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.08);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,.15);
+
+  z-index: 0;
+}
+
+/* ======================
+   PRODUCT NAME
+====================== */
+
+.product-title {
+  margin-top: 20px;
+
+  color: white;
+
+  font-size: 1.4rem;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  z-index: 3;
+}
+
+/* ======================
+   SLIDER DOTS
+====================== */
+
+.slider-container{
+  position: relative;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  width:100%;
+  z-index:2;
+}
+.slider-dots {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 25px;
+
+  z-index: 3;
+}
+
+.dot{
+  width:14px;
+  height:14px;
+
+  border:none;
+  outline:none;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.4);
+
+  cursor:pointer;
+
+  transition:.3s ease;
+}
+
+.dot:hover {
+  background: rgba(255,255,255,.8);
+}
+
+.dot.active {
+  background: white;
+
+  transform: scale(1.4);
+
+  box-shadow:
+    0 0 15px rgba(255,255,255,.8);
+}
+
+/* ======================
+   FLOATING BUBBLES
+====================== */
+
+.bubble {
+  position: absolute;
+
+  border-radius: 50%;
+
+  backdrop-filter: blur(10px);
+
+  background: rgba(255,255,255,.15);
+}
+
+.b1 {
+  width: 150px;
+  height: 150px;
+
+  top: 10%;
+  right: 10%;
+}
+
+.b2 {
+  width: 100px;
+  height: 100px;
+
+  bottom: 15%;
+  left: 5%;
+}
+
+.b3 {
+  width: 70px;
+  height: 70px;
+
+  top: 50%;
+  left: 45%;
+}
+
+/* ======================
+   FLOAT ANIMATION
+====================== */
+
+@keyframes floating {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -3,42 +3,32 @@ import velinWaterImage from "../assets/images/products/velinWaterImage.png";
 import velinNibuaImage from "../assets/images/products/velinNibuaImage.png";
 import velinJeeraImage from "../assets/images/products/velinJeeraImage.png";
 
-const products = [
+
+const heroSlides = [
   {
     id: 1,
-    slug: "soda",
-    name: "Velin Soda",
-    description:
-      "Refreshing carbonated beverage.",
     image: velinSodaImage,
+    title: "Velin Soda",
+    color: "#0077ff",
   },
-
   {
     id: 2,
-    slug: "water",
-    name: "Velin Packaged Drinking Water",
-    description:
-      "Pure and hygienic drinking water.",
     image: velinWaterImage,
+    title: "Velin Water",
+    color: "#00e5c0",
   },
-
   {
     id: 3,
-    slug: "nibua",
-    name: "Velin Nibua",
-    description:
-      "Refreshing lemon beverage.",
     image: velinNibuaImage,
+    title: "Velin Nibua",
+    color: "#ffd500",
   },
-
   {
     id: 4,
-    slig: "jeera",
-    name: "Velin Jeera",
-    description:
-        "Refreshing Jeera Drink",
     image: velinJeeraImage,
-  }
+    title: "Velin Jeera",
+    color: "#ff7b00",
+  },
 ];
 
-export default products;
+export default heroSlides;
