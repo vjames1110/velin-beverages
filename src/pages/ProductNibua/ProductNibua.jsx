@@ -1,3 +1,11 @@
+import ProductPage from "../../components/products/details/ProductPage";
+
+import productDetails from "../../data/productDetails";
+
 export default function ProductNibua() {
-  return <h1>Velin Nibua</h1>;
+  return (
+    <ProductPage
+      product={productDetails.nibua}
+    />
+  );
 }

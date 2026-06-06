@@ -1,0 +1,178 @@
+.product-specifications {
+  padding: 100px 20px;
+
+  background: #ffffff;
+}
+
+.product-specifications-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.specifications-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.specifications-tag {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  color: #0077ff;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.specifications-header h2 {
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3rem
+    );
+
+  font-weight: 800;
+
+  color: #071c3c;
+
+  margin-bottom: 18px;
+}
+
+.specifications-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #60708a;
+
+  line-height: 1.8;
+}
+
+.specifications-card {
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  border: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  box-shadow:
+    0 25px 60px
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+}
+
+.spec-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  align-items: center;
+
+  min-height: 80px;
+
+  border-bottom: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.06
+    );
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 24px 30px;
+
+  background:
+    rgba(
+      0,
+      119,
+      255,
+      0.03
+    );
+
+  font-weight: 700;
+
+  color: #071c3c;
+}
+
+.spec-label svg {
+  color: #0077ff;
+}
+
+.spec-value {
+  padding: 24px 30px;
+
+  color: #60708a;
+
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+  .spec-row {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-label {
+    border-bottom: 1px solid
+      rgba(
+        0,
+        119,
+        255,
+        0.05
+      );
+  }
+}
+
+@media (max-width: 576px) {
+
+  .product-specifications {
+    padding: 70px 20px;
+  }
+
+  .spec-label,
+  .spec-value {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,194 @@
+.related-products {
+  padding: 100px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8fbff 100%
+    );
+}
+
+.related-products-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.related-products-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.related-tag {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  color: #0077ff;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.related-products-header h2 {
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3rem
+    );
+
+  font-weight: 800;
+
+  color: #071c3c;
+
+  margin-bottom: 16px;
+}
+
+.related-products-header p {
+  color: #60708a;
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  line-height: 1.8;
+}
+
+.related-products-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        280px,
+        1fr
+      )
+    );
+
+  gap: 30px;
+}
+
+.related-product-card {
+  background: white;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.related-product-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 25px 50px
+    rgba(
+      0,
+      119,
+      255,
+      0.12
+    );
+}
+
+.related-image {
+  height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff,
+      #eef8ff
+    );
+}
+
+.related-image img {
+  width: 100%;
+  max-height: 220px;
+
+  object-fit: contain;
+}
+
+.related-content {
+  padding: 25px;
+}
+
+.related-content h3 {
+  color: #071c3c;
+
+  margin-bottom: 12px;
+
+  font-size: 1.2rem;
+}
+
+.related-content p {
+  color: #60708a;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+
+  min-height: 55px;
+}
+
+.related-btn {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00c2ff,
+      #0077ff
+    );
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.related-btn:hover {
+  transform:
+    translateY(-2px);
+}

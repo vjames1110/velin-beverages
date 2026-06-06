@@ -1,3 +1,11 @@
+import ProductPage from "../../components/products/details/ProductPage";
+
+import productDetails from "../../data/productDetails";
+
 export default function ProductWater() {
-  return <h1>Velin Water</h1>;
+  return (
+    <ProductPage
+      product={productDetails.water}
+    />
+  );
 }

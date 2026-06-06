@@ -1,0 +1,206 @@
+.product-inquiry {
+  padding: 100px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #ffffff 100%
+    );
+}
+
+.product-inquiry-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inquiry-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.inquiry-tag {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  color: #0077ff;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.inquiry-header h2 {
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3rem
+    );
+
+  font-weight: 800;
+
+  color: #071c3c;
+
+  margin-bottom: 18px;
+}
+
+.inquiry-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #60708a;
+
+  line-height: 1.8;
+}
+
+.inquiry-form-wrapper {
+  background: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  border: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  box-shadow:
+    0 30px 60px
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+}
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      1fr
+    );
+
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  border: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.12
+    );
+
+  font-size: 0.95rem;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.inquiry-form input:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus {
+  border-color: #0077ff;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+}
+
+.inquiry-form textarea {
+  resize: none;
+
+  margin-bottom: 24px;
+}
+
+.inquiry-submit-btn {
+  border: none;
+
+  padding: 16px 34px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00c2ff,
+      #0077ff
+    );
+
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.inquiry-submit-btn:hover {
+  transform:
+    translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inquiry-form-wrapper {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .product-inquiry {
+    padding: 70px 20px;
+  }
+
+  .inquiry-submit-btn {
+    width: 100%;
+  }
+}

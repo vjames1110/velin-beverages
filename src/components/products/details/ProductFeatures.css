@@ -1,0 +1,184 @@
+.product-features {
+  padding: 100px 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #ffffff 100%
+    );
+}
+
+.product-features-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.features-heading {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.features-tag {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  color: #0077ff;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.features-heading h2 {
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3rem
+    );
+
+  font-weight: 800;
+
+  color: #071c3c;
+}
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      5,
+      minmax(
+        180px,
+        1fr
+      )
+    );
+
+  gap: 20px;
+}
+
+.feature-card {
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 24px 20px;
+
+  text-align: center;
+
+  border: 1px solid
+    rgba(
+      0,
+      119,
+      255,
+      0.08
+    );
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 20px 40px
+    rgba(
+      0,
+      119,
+      255,
+      0.12
+    );
+}
+
+.feature-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00c2ff,
+      #0077ff
+    );
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+
+  color: #071c3c;
+
+  margin-bottom: 12px;
+
+  font-weight: 700;
+}
+
+.feature-card p {
+  color: #60708a;
+
+  font-size: 0.9rem;
+
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+
+  .features-grid {
+    grid-template-columns:
+      repeat(
+        3,
+        1fr
+      );
+  }
+}
+
+@media (max-width: 768px) {
+
+  .features-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+  }
+}
+
+@media (max-width: 576px) {
+
+  .product-features {
+    padding: 70px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
