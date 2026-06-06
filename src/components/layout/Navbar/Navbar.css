@@ -1,58 +1,151 @@
-.navbar{
- position:fixed;
- top:0;
- left:0;
- width:100%;
- z-index:1000;
+/* ==========================
+   NAVBAR
+========================== */
 
- display:flex;
- justify-content:space-between;
- align-items:center;
+.navbar {
+  position: fixed;
 
- padding:20px 8%;
+  top: 0;
+  left: 0;
 
- transition:.4s ease;
+  width: 100%;
+
+  padding: 22px 8%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 9999;
+
+  transition: all 0.4s ease;
+
+  background: transparent;
 }
 
-.navbar.scrolled{
- backdrop-filter:blur(20px);
- background:rgba(255,255,255,.15);
- border-bottom:1px solid rgba(255,255,255,.2);
+/* ==========================
+   SCROLLED NAVBAR
+========================== */
+
+.navbar-scrolled {
+
+  background:
+    rgba(8, 20, 35, 0.92);
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 10px 30px rgba(
+      0,
+      0,
+      0,
+      0.15
+    );
 }
 
-.logo{
- font-size:1.5rem;
- font-weight:700;
- color:white;
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+
+  font-size: 1.8rem;
+
+  font-weight: 700;
+
+  color: white;
+
+  cursor: pointer;
+
+  text-shadow:
+    0 2px 10px rgba(
+      0,
+      0,
+      0,
+      0.4
+    );
 }
 
-.nav-links{
- display:flex;
- gap:30px;
+/* ==========================
+   LINKS
+========================== */
+
+.nav-links {
+
+  display: flex;
+
+  gap: 35px;
+
+  align-items: center;
 }
 
-.nav-links a{
- color:white;
- position:relative;
+.nav-links li {
+
+  list-style: none;
 }
 
-.nav-links a::after{
- content:"";
- position:absolute;
- width:0;
- height:2px;
- left:0;
- bottom:-5px;
+.nav-links a {
 
- background:white;
+  color: white;
 
- transition:.3s;
+  font-weight: 500;
+
+  transition: 0.3s ease;
+
+  position: relative;
+
+  text-shadow:
+    0 2px 10px rgba(
+      0,
+      0,
+      0,
+      0.4
+    );
 }
 
-.nav-links a:hover::after{
- width:100%;
+.nav-links a:hover {
+
+  color: #00e5c0;
 }
 
-.mobile-menu{
- display:none;
+/* Animated underline */
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #00e5c0;
+
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+
+  width: 100%;
+}
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+.mobile-menu {
+
+  display: none;
+
+  color: white;
+
+  font-size: 1.7rem;
+
+  cursor: pointer;
 }

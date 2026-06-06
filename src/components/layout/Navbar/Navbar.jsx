@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import "./Navbar.css";
@@ -10,10 +9,13 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 80);
+      setScrolled(window.scrollY > 60);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener(
+      "scroll",
+      handleScroll
+    );
 
     return () =>
       window.removeEventListener(
@@ -22,10 +24,16 @@ export default function Navbar() {
       );
   }, []);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav
       className={`navbar ${
-        scrolled ? "scrolled" : ""
+        scrolled
+          ? "navbar-scrolled"
+          : ""
       }`}
     >
       <div className="logo">
@@ -37,10 +45,41 @@ export default function Navbar() {
           menuOpen ? "active" : ""
         }`}
       >
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="#home"
+            onClick={closeMenu}
+          >
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#about"
+            onClick={closeMenu}
+          >
+            About
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#products"
+            onClick={closeMenu}
+          >
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            onClick={closeMenu}
+          >
+            Contact
+          </a>
+        </li>
       </ul>
 
       <div
