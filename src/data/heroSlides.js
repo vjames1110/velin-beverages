@@ -1,33 +1,43 @@
-import velinSodaImage from "../assets/images/products/velinSodaImage.png";
-import velinWaterImage from "../assets/images/products/velinWaterImage.png";
-import velinNibuaImage from "../assets/images/products/velinNibuaImage.png";
-import velinJeeraImage from "../assets/images/products/velinJeeraImage.png";
-
+import sodaBanner from "../assets/images/hero/velin-soda-banner.png";
+import waterBanner from "../assets/images/hero/velin-water-banner.png";
+import nibuaBanner from "../assets/images/hero/velin-nibua-banner.png";
+import jeeraBanner from "../assets/images/hero/velin-jeera-banner.png";
 
 const heroSlides = [
   {
     id: 1,
-    image: velinSodaImage,
+    image: sodaBanner,
     title: "Velin Soda",
-    color: "#0077ff",
+    subtitle: "Light Up the Night",
+    description:
+      "Experience the bold fizz and refreshing taste of Velin Soda.",
   },
+
   {
     id: 2,
-    image: velinWaterImage,
-    title: "Velin Water",
-    color: "#00e5c0",
+    image: waterBanner,
+    title: "Velin Packaged Drinking Water",
+    subtitle: "Essence of Purity",
+    description:
+      "Carefully purified and packaged for your daily hydration needs.",
   },
+
   {
     id: 3,
-    image: velinNibuaImage,
+    image: nibuaBanner,
     title: "Velin Nibua",
-    color: "#ffd500",
+    subtitle: "Real Taste No Waste",
+    description:
+      "Tangy lemon flavor crafted for instant refreshment.",
   },
+
   {
     id: 4,
-    image: velinJeeraImage,
+    image: jeeraBanner,
     title: "Velin Jeera",
-    color: "#ff7b00",
+    subtitle: "Desi Jeera Desi Taste",
+    description:
+      "The perfect blend of jeera flavor and cooling refreshment.",
   },
 ];
 

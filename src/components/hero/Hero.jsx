@@ -8,177 +8,122 @@ export default function Hero() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const slider = setInterval(() => {
+    const interval = setInterval(() => {
       setCurrent(
-        (prev) => (prev + 1) % heroSlides.length
+        (prev) =>
+          (prev + 1) % heroSlides.length
       );
-    }, 4000);
+    }, 5000);
 
-    return () => clearInterval(slider);
+    return () => clearInterval(interval);
   }, []);
 
   const slide = heroSlides[current];
 
   return (
-    <section id="home" className="hero">
+    <section className="hero">
 
-      {/* LEFT CONTENT */}
-      <div className="hero-content">
-
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Refreshing Every Moment
-          <br />
-          With Velin Beverages
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-          }}
-        >
-          Premium Soda, Packaged Drinking Water,
-          Nibua Lemon Drink & Jeera Refreshment.
-        </motion.p>
+      <AnimatePresence mode="wait">
 
         <motion.div
-          className="hero-buttons"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          key={slide.id}
+          className="hero-slide"
+
+          style={{
+            backgroundImage:
+              `url(${slide.image})`,
+          }}
+
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+
           transition={{
-            delay: 0.5,
-            duration: 0.8,
+            duration: 1,
           }}
         >
-          <button>
-            Explore Products
-          </button>
 
-          <button className="outline">
-            Become Distributor
-          </button>
-        </motion.div>
+          <div className="hero-overlay"></div>
 
-      </div>
+          <div className="hero-content">
 
-      {/* RIGHT PRODUCT SHOWCASE */}
-      <div className="hero-image">
-
-        <div className="slider-container">
-
-          {/* COLOR GLOW */}
-          <motion.div
-            key={`glow-${slide.id}`}
-            className="glow"
-            style={{
-              background: slide.color,
-            }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.55 }}
-            transition={{ duration: 0.6 }}
-          />
-
-          {/* PRODUCT IMAGE */}
-          <AnimatePresence mode="wait">
-
-            <motion.img
-              key={slide.id}
-              src={slide.image}
-              alt={slide.title}
-              className="hero-product"
-
+            <motion.h1
+              key={slide.title}
               initial={{
                 opacity: 0,
-                scale: 0.85,
-                y: 20,
+                y: 40,
               }}
-
               animate={{
                 opacity: 1,
-                scale: 1,
                 y: 0,
               }}
+            >
+              {slide.title}
+            </motion.h1>
 
-              exit={{
+            <motion.h2
+              key={slide.subtitle}
+              initial={{
                 opacity: 0,
-                scale: 0.85,
-                y: -20,
+                y: 40,
               }}
-
-              transition={{
-                duration: 0.6,
+              animate={{
+                opacity: 1,
+                y: 0,
               }}
-            />
+            >
+              {slide.subtitle}
+            </motion.h2>
 
-          </AnimatePresence>
+            <motion.p
+              key={slide.description}
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+            >
+              {slide.description}
+            </motion.p>
 
-          {/* PRODUCT NAME */}
-          <motion.h3
-            key={`title-${slide.id}`}
-            className="product-title"
-            initial={{
-              opacity: 0,
-              y: 10,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.5,
-            }}
-          >
-            {slide.title}
-          </motion.h3>
+            <div className="hero-buttons">
 
-          {/* DOTS */}
-          <div className="slider-dots">
+              <button>
+                Explore Products
+              </button>
 
-            {heroSlides.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                className={
-                  current === index
-                    ? "dot active"
-                    : "dot"
-                }
-                onClick={() =>
-                  setCurrent(index)
-                }
-                aria-label={`Slide ${index + 1}`}
-              />
-            ))}
+              <button className="outline">
+                Become Distributor
+              </button>
+
+            </div>
 
           </div>
 
-        </div>
+        </motion.div>
+
+      </AnimatePresence>
+
+      <div className="slider-dots">
+
+        {heroSlides.map((_, index) => (
+          <button
+            key={index}
+            className={
+              current === index
+                ? "dot active"
+                : "dot"
+            }
+            onClick={() =>
+              setCurrent(index)
+            }
+          />
+        ))}
 
       </div>
-
-      {/* BACKGROUND LIQUID WAVES */}
-
-      <div className="liquid-wave wave1"></div>
-      <div className="liquid-wave wave2"></div>
-
-      {/* BACKGROUND CARBONATION PARTICLE */}
-
-      <div className="particle p1"></div>
-      <div className="particle p2"></div>
-      <div className="particle p3"></div>
-      <div className="particle p4"></div>
-      <div className="particle p5"></div>
-
-      {/* BACKGROUND BUBBLES */}
-      <div className="bubble b1"></div>
-      <div className="bubble b2"></div>
-      <div className="bubble b3"></div>
 
     </section>
   );

@@ -6,10 +6,14 @@ import ProductSection from "../../components/products/ProductSection";
 import Stats from "../../components/stats/Stats";
 import DistributorCTA from "../../components/distributor/DistributorCTA";
 import ContactSection from "../../components/contact/ContactSection";
+import Footer from "../../components/layout/Footer/Footer";
+import WhatsAppButton from "../../components/common/WhatsappButton";
+import ScrollProgress from "../../components/common/ScrollProgress";
 
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <About />
@@ -33,6 +37,8 @@ export default function Home() {
       <Stats />
       <DistributorCTA />
       <ContactSection />
+      <Footer />
+      <WhatsAppButton />
     </>
   );
 }

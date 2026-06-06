@@ -1,0 +1,159 @@
+.footer {
+
+  background:
+    #081423;
+
+  color: white;
+
+  padding-top: 80px;
+}
+
+.footer-container {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 40px;
+
+  padding:
+    0 8% 60px;
+}
+
+/* =====================
+   HEADINGS
+===================== */
+
+.footer-logo {
+
+  font-size: 2rem;
+
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+
+  margin-bottom: 20px;
+
+  font-size: 1.2rem;
+}
+
+.footer-column p {
+
+  color:
+    rgba(255,255,255,.75);
+
+  line-height: 1.8;
+}
+
+/* =====================
+   LINKS
+===================== */
+
+.footer-column ul {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.footer-column ul li a {
+
+  color:
+    rgba(255,255,255,.75);
+
+  transition: .3s ease;
+}
+
+.footer-column ul li a:hover {
+
+  color:
+    var(--secondary-aqua);
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.footer-contact {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.footer-contact p {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* =====================
+   SOCIAL
+===================== */
+
+.footer-social {
+
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.footer-social a {
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.08);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  transition: .3s ease;
+}
+
+.footer-social a:hover {
+
+  background:
+    var(--secondary-aqua);
+
+  transform:
+    translateY(-4px);
+}
+
+/* =====================
+   COPYRIGHT
+===================== */
+
+.footer-bottom {
+
+  text-align: center;
+
+  padding: 25px;
+
+  border-top:
+    1px solid rgba(255,255,255,.1);
+}
+
+.footer-bottom p {
+
+  color:
+    rgba(255,255,255,.65);
+}

@@ -1,7 +1,7 @@
-import velinSodaImage from "../assets/images/products/velinSodaImage.png";
-import velinWaterImage from "../assets/images/products/velinWaterImage.png";
-import velinNibuaImage from "../assets/images/products/velinNibuaImage.png";
-import velinJeeraImage from "../assets/images/products/velinJeeraImage.png";
+import velinSodaImage from "../assets/images/products/velin-soda.jpeg";
+import velinWaterImage from "../assets/images/products/velin-water.jpeg";
+import velinNibuaImage from "../assets/images/products/velin-nibua.jpeg";
+import velinJeeraImage from "../assets/images/products/velin-jeera.jpeg";
 
 const products = [
   {
