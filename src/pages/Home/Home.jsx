@@ -4,6 +4,8 @@ import About from "../../components/about/About";
 import WhyChoose from "../../components/common/WhyChooseVelin";
 import ProductSection from "../../components/products/ProductSection";
 import Stats from "../../components/stats/Stats";
+import DistributorCTA from "../../components/distributor/DistributorCTA";
+import ContactSection from "../../components/contact/ContactSection";
 
 export default function Home() {
   return (
@@ -29,6 +31,8 @@ export default function Home() {
       </div>
 
       <Stats />
+      <DistributorCTA />
+      <ContactSection />
     </>
   );
 }

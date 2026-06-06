@@ -1,0 +1,123 @@
+.distributor-section {
+
+  padding: 120px 8%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0077ff,
+      #00e5c0
+    );
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.distributor-card {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+
+  padding: 70px;
+
+  border-radius: 35px;
+
+  background:
+    rgba(255,255,255,.15);
+
+  backdrop-filter:
+    blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,.25);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.15);
+
+  color: white;
+}
+
+.cta-tag {
+
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255,255,255,.2);
+
+  margin-bottom: 25px;
+
+  font-size: .85rem;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+.distributor-card h2 {
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+
+.distributor-card p {
+
+  max-width: 650px;
+
+  margin: auto;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+.cta-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.primary-btn {
+
+  background: white;
+
+  color: #0077ff;
+
+  border: none;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.secondary-btn {
+
+  background: transparent;
+
+  color: white;
+
+  border: 2px solid white;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}

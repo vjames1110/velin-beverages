@@ -29,7 +29,7 @@ export default function Navbar() {
       }`}
     >
       <div className="logo">
-        Velin Beverages
+        Velin
       </div>
 
       <ul
