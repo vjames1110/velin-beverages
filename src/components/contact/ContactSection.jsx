@@ -37,16 +37,16 @@ export default function ContactSection() {
 
           <div className="info-item">
             <FaPhoneAlt />
-            <span>+91- XXXXX XXXXX</span>
+            <span>+91- 92381 08801</span>
           </div>
 
           <div className="info-item">
             <FaEnvelope />
-            <span>info@velinbeverages.com</span>
+            <span>pkpureindustries@gmail.com</span>
           </div>
           <div className="info-item">
             <FaMapMarkerAlt />
-            <span>India</span>
+            <span>Jabalpur, India</span>
           </div>
           <div className="info-item">
             <FaClock />
