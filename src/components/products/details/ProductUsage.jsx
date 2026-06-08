@@ -6,21 +6,22 @@ import {
   FaUtensils,
   FaPlane,
   FaSun,
+  FaStar,
 } from "react-icons/fa";
 
 import "./ProductUsage.css";
 
-const icons = [
-  FaGlassCheers,
-  FaCocktail,
-  FaBirthdayCake,
-  FaUtensils,
-  FaPlane,
-  FaSun,
-];
+const usageIcons = {
+  sodaMocktails: FaGlassCheers,
+  sodaCocktails: FaCocktail,
+  sodaParty: FaBirthdayCake,
+  sodaRestaurant: FaUtensils,
+  sodaTravel: FaPlane,
+  sodaSun: FaSun,
+};
 
 export default function ProductUsage({
-  usage,
+  usage = [],
   title = "Perfect For Every Occasion",
 }) {
   return (
@@ -62,45 +63,39 @@ export default function ProductUsage({
 
         <div className="usage-grid">
 
-          {usage.map(
-            (item, index) => {
-              const Icon =
-                icons[
-                  index % icons.length
-                ];
+          {usage.map((item, index) => {
+            const Icon = usageIcons[item.icon] || FaStar;
 
-              return (
-                <motion.div
-                  key={index}
-                  className="usage-card"
-                  initial={{
-                    opacity: 0,
-                    y: 30,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  transition={{
-                    duration: 0.4,
-                    delay:
-                      index * 0.08,
-                  }}
-                >
-                  <div className="usage-icon">
-                    <Icon />
-                  </div>
+            return (
+              <motion.div
+                key={index}
+                className="usage-card"
+                initial={{
+                  opacity: 0,
+                  y: 30,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.08,
+                }}
+              >
+                <div className="usage-icon">
+                  <Icon />
+                </div>
 
-                  <h3>
-                    {item.title}
-                  </h3>
-                </motion.div>
-              );
-            }
-          )}
+                <h3>
+                  {item.title}
+                </h3>
+              </motion.div>
+            );
+          })}
 
         </div>
 

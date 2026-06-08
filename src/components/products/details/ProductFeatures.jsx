@@ -5,17 +5,28 @@ import {
   FaAward,
   FaShieldAlt,
   FaStar,
+  FaCertificate,
+  FaFilter,
+  FaHandHoldingWater,
+  FaWater,
 } from "react-icons/fa";
 
 import "./ProductFeatures.css";
 
-const icons = [
-  FaBolt,
-  FaGem,
-  FaAward,
-  FaShieldAlt,
-  FaStar,
-];
+const featureIcons = {
+  
+  bolt: FaBolt,
+  gem: FaGem,
+  award: FaAward,
+  sodaShield: FaShieldAlt,
+  star: FaStar,
+  certificate: FaCertificate,
+  filter: FaFilter,
+  waterShield: FaShieldAlt,
+  droplet: FaHandHoldingWater,
+  water:FaWater
+};
+  
 
 export default function ProductFeatures({
   features,
@@ -57,9 +68,7 @@ export default function ProductFeatures({
           {features.map(
             (feature, index) => {
               const Icon =
-                icons[
-                  index % icons.length
-                ];
+                featureIcons[feature.icon] || FaStar;
 
               return (
                 <motion.div

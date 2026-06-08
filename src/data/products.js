@@ -33,7 +33,7 @@ const products = [
 
   {
     id: 4,
-    slig: "jeera",
+    slug: "jeera",
     name: "Velin Jeera",
     description:
         "Refreshing Jeera Drink",

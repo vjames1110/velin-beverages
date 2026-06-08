@@ -9,6 +9,7 @@ import velinNibuaImage from "../assets/images/products/velin-nibua.jpeg";
 import velinJeeraImage from "../assets/images/products/velin-jeera.jpeg";
 
 import sodaTrustImage from "../assets/images/products/sodaTrust.jpeg"
+import waterTrustImage from "../assets/images/products/waterTrust.jpeg"
 
 const productDetails = {
   soda: {
@@ -16,9 +17,9 @@ const productDetails = {
 
     hero: {
       title: "Velin Soda",
-      subtitle: "Pure Sparkle. Powerful Refreshment.",
+      subtitle: "Light Up the Night",
       description:
-        "Experience the crisp taste and strong carbonation of Velin Soda. Crafted with quality and consistency for every refreshing moment.",
+        "Velin soda is a crystal clear, strong carbonated beverage that delivers powerful fizz and exceptional refreshment in every sip. Perfect for mixing, mocktails, or whenever you need an instant burst of freshness.",
       bannerImage: sodaBanner,
       productImage: velinSodaImage,
     },
@@ -33,26 +34,31 @@ const productDetails = {
 
     features: [
       {
+        icon: "bolt",
         title: "Strong Carbonation",
         description:
           "Powerful fizz for an extra refreshing experience.",
       },
       {
+        icon: "gem",
         title: "Crystal Clear",
         description:
           "Purified formulation for exceptional clarity and quality.",
       },
       {
+        icon: "award",
         title: "Premium Quality",
         description:
           "Produced using modern manufacturing standards.",
       },
       {
+        icon: "sodaShield",
         title: "Hygienically Packed",
         description:
           "Processed and packed under strict hygienic conditions.",
       },
       {
+        icon: "star",
         title: "Trusted Taste",
         description:
           "A refreshing taste trusted by customers and businesses.",
@@ -62,21 +68,27 @@ const productDetails = {
 
     usage: [
       {
+        icon: "sodaMocktails",
         title: "Mocktails",
       },
       {
+        icon: "sodaCocktails",
         title: "Cocktails",
       },
       {
+        icon: "sodaParty",
         title: "Parties",
       },
       {
+        icon: "sodaRestaurant",
         title: "Restaurants",
       },
       {
+        icon: "sodaTravel",
         title: "Travel",
       },
       {
+        icon: "sodaSun",
         title: "Daily Refreshment",
       },
     ],
@@ -141,10 +153,134 @@ const productDetails = {
       title: "Velin Packaged Drinking Water",
       subtitle: "Essence of Purity",
       description:
-        "Pure, hygienic and carefully packaged drinking water for daily hydration.",
+        "Pure, hygienic and refreshing packaged drinking water processed through advanced purification technology. Every drop is tasted for quality and packed under strict standards.",
       bannerImage: waterBanner,
       productImage: velinWaterImage,
     },
+    overview: {
+      title: "Velin-Premium Packaged Drinking Water",
+      subtitle: "Essence of Purity",
+      description:
+        "Pure, hygienic and refreshing packaged drinking water processed through advanced purification technology. Every drop is tasted for quality and packed under strict standards.",
+      image: velinWaterImage,
+    },
+
+    features: [
+      {
+        icon: "certificate",
+        title: "ISI Certified Packaged Drinking Water",
+        description:
+          "Manufactured in accordance with ISI Standards to ensure the highest level of quality and safey.",
+      },
+      { icon:"filter",
+        title: "Multi-Stage Purification",
+        description:
+          "Advanced multi-stage filtiration removes impurities and ensures clean, safe and healthy drinking water.",
+      },
+      { icon:"waterShield",
+        title: "Ozonized for Safety",
+        description:
+          "Ozonization process keeps the water pure, safe and free from harmful microorganisms.",
+      },
+      { icon:"droplet",
+        title: "Hygienically Packed",
+        description:
+          "Packed in a fully automated and hygenic environment to protect purity and freshness.",
+      },
+      { icon:"water",
+        title: "Consistend Taste & Quality",
+        description:
+          "Every bottle of Velin offers consistent quality and a refreshing taste you can trust.",
+      },
+    ],
+    trustImage: waterTrustImage,
+
+    sizes: [
+      {
+        size: "250 ML",
+      },
+      {
+        size: "500 ML",
+      },
+      {
+        size: "1 Litre"
+      }
+    ],
+
+    usage: [
+      {
+        icon: "car",
+        title: "ON THE GO",
+      },
+      {
+        icon: "home",
+        title: "AT HOME",
+      },
+      {
+        icon: "users",
+        title: "PARTIES",
+      },
+      {
+        icon: "restaurant",
+        title: "RESTAURANTS",
+      },
+      {
+        icon: "droplet",
+        title: "STAY HYDRATED"
+      },
+      {
+        icon: "office",
+        title: "OFFICE USAGE"
+      }
+    ],
+
+    certifications: [
+      "Consistent Quality",
+      "Best Taste",
+      "Safe & Hygienic",
+      "Trusted by Thousands",
+      "FSSAI Certified",
+      "PET Packaging",
+      "Made in India",
+    ],
+
+    specifications: [
+      {
+        label: "Product Type",
+        value: "Packaged Drinking Water",
+      },
+      {
+        label: "Category",
+        value: "Water",
+      },
+      {
+        label: "Packaging",
+        value: "Food Grade PET Bottle",
+      },
+      {
+        label: "Quality Standard",
+        value: "Hygienically Processed",
+      },
+      {
+        label: "Appearance",
+        value: "Crystal Clear",
+      },
+      {
+        label: "Usage",
+        value: "Drinking",
+      },
+      {
+        label: "Storage",
+        value: "Store in a Cool & Dry Place",
+      },
+    ],
+
+    gallery: [
+      velinWaterImage,
+      velinWaterImage,
+      velinWaterImage,
+      velinWaterImage,
+    ],
   },
 
   nibua: {

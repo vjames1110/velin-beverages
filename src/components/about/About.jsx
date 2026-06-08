@@ -25,7 +25,7 @@ export default function About() {
         </h2>
 
         <p>
-          Velin Beverages is committed to
+          Velin is committed to
           delivering premium quality
           refreshment through innovative
           beverage products.
