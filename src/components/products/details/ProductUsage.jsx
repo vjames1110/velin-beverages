@@ -7,6 +7,12 @@ import {
   FaPlane,
   FaSun,
   FaStar,
+  FaCar,
+  FaHome,
+  FaUserFriends,
+  FaHotel,
+  FaHandHoldingWater,
+  FaLaptop,
 } from "react-icons/fa";
 
 import "./ProductUsage.css";
@@ -18,6 +24,13 @@ const usageIcons = {
   sodaRestaurant: FaUtensils,
   sodaTravel: FaPlane,
   sodaSun: FaSun,
+  waterCar: FaCar,
+  waterHome: FaHome,
+  waterUsers: FaUserFriends,
+  waterRestaurant: FaHotel,
+  waterDroplet: FaHandHoldingWater,
+  waterOffice: FaLaptop,
+  
 };
 
 export default function ProductUsage({

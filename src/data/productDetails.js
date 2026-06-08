@@ -209,38 +209,35 @@ const productDetails = {
 
     usage: [
       {
-        icon: "car",
+        icon: "waterCar",
         title: "ON THE GO",
       },
       {
-        icon: "home",
+        icon: "waterHome",
         title: "AT HOME",
       },
       {
-        icon: "users",
+        icon: "waterUsers",
         title: "PARTIES",
       },
       {
-        icon: "restaurant",
+        icon: "waterRestaurant",
         title: "RESTAURANTS",
       },
       {
-        icon: "droplet",
+        icon: "waterDroplet",
         title: "STAY HYDRATED"
       },
       {
-        icon: "office",
+        icon: "waterOffice",
         title: "OFFICE USAGE"
       }
     ],
 
     certifications: [
-      "Consistent Quality",
-      "Best Taste",
       "Safe & Hygienic",
       "Trusted by Thousands",
       "FSSAI Certified",
-      "PET Packaging",
       "Made in India",
     ],
 
