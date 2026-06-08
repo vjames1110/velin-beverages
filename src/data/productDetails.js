@@ -322,50 +322,38 @@ const productDetails = {
         description:
           "Produced and packed under strict quality and hygiene standards.",
       },
-      { icon:"water",
-        title: "Consistent Taste & Quality",
+      { icon:"nibuaQuality",
+        title: "Premium Quality",
         description:
-          "Every bottle of Velin offers consistent quality and a refreshing taste you can trust.",
+          "Carefully selected ingredients for consistent taste and quality.",
       },
     ],
-    trustImage: waterTrustImage,
-
-    sizes: [
-      {
-        size: "250 ML",
-      },
-      {
-        size: "500 ML",
-      },
-      {
-        size: "1 Litre"
-      }
-    ],
+    trustImage: nibuaTrustImage,
 
     usage: [
       {
-        icon: "waterCar",
-        title: "ON THE GO",
+        icon: "nibuaFamily",
+        title: "Family Gatherings",
       },
       {
-        icon: "waterHome",
-        title: "AT HOME",
+        icon: "nibuaRestaurants",
+        title: "Restaurants & Hotels",
       },
       {
-        icon: "waterUsers",
-        title: "PARTIES",
+        icon: "nibuaRetail",
+        title: "Retail Stores",
       },
       {
-        icon: "waterRestaurant",
-        title: "RESTAURANTS",
+        icon: "nibuaTravel",
+        title: "Travel & Outdoor Activities",
       },
       {
-        icon: "waterDroplet",
-        title: "STAY HYDRATED"
+        icon: "nibuaDaily",
+        title: "Daily Refreshment"
       },
       {
-        icon: "waterOffice",
-        title: "OFFICE USAGE"
+        icon: "nibuaParty",
+        title: "Party",
       }
     ],
 
@@ -374,16 +362,18 @@ const productDetails = {
       "Trusted by Thousands",
       "FSSAI Certified",
       "Made in India",
+      "Consistent Taste & Quality",
+      "Made with Quality Ingredients",
     ],
 
     specifications: [
       {
         label: "Product Type",
-        value: "Packaged Drinking Water",
+        value: "Lemon Drink"
       },
       {
         label: "Category",
-        value: "Water",
+        value: "Coldrink"
       },
       {
         label: "Packaging",
@@ -395,7 +385,7 @@ const productDetails = {
       },
       {
         label: "Appearance",
-        value: "Crystal Clear",
+        value: "Sparkling Fizz",
       },
       {
         label: "Usage",
@@ -408,10 +398,10 @@ const productDetails = {
     ],
 
     gallery: [
-      velinWaterImage,
-      velinWaterImage,
-      velinWaterImage,
-      velinWaterImage,
+      velinNibuaImage,
+      velinNibuaImage,
+      velinNibuaImage,
+      velinNibuaImage,
     ],
   },
 

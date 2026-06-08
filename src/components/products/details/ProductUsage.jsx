@@ -13,7 +13,22 @@ import {
   FaHotel,
   FaHandHoldingWater,
   FaLaptop,
+  FaShoppingCart,
 } from "react-icons/fa";
+
+import {
+  IoIosPeople,
+  IoIosRestaurant,
+} from "react-icons/io";
+
+import {
+  SiFresh
+} from "react-icons/si";
+
+import {
+  LuPartyPopper
+} from "react-icons/lu";
+
 
 import "./ProductUsage.css";
 
@@ -30,7 +45,12 @@ const usageIcons = {
   waterRestaurant: FaHotel,
   waterDroplet: FaHandHoldingWater,
   waterOffice: FaLaptop,
-  
+  nibuaFamily: IoIosPeople,
+  nibuaRestaurants: IoIosRestaurant,
+  nibuaRetail: FaShoppingCart,
+  nibuaTravel: FaPlane,
+  nibuaDaily: SiFresh,
+  nibuaParty: LuPartyPopper
 };
 
 export default function ProductUsage({

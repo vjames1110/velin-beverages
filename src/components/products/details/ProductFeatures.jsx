@@ -9,12 +9,13 @@ import {
   FaFilter,
   FaHandHoldingWater,
   FaWater,
-  FaRegLemon
+  FaRegLemon,
 } from "react-icons/fa";
 
 import {
   GiSparkles,
   GiThermometerCold,
+  GiThreeLeaves,
 } from "react-icons/gi"
 
 import "./ProductFeatures.css";
@@ -34,7 +35,8 @@ const featureIcons = {
   nibuaRefresh: FaRegLemon,
   nibuaSparkle: GiSparkles,
   nibuaChilled: GiThermometerCold,
-  nibuaHygiene: FaShieldAlt
+  nibuaHygiene: FaShieldAlt,
+  nibuaQuality: GiThreeLeaves
 };
   
 
