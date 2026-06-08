@@ -10,6 +10,7 @@ import velinJeeraImage from "../assets/images/products/velin-jeera.jpeg";
 
 import sodaTrustImage from "../assets/images/products/sodaTrust.jpeg"
 import waterTrustImage from "../assets/images/products/waterTrust.jpeg"
+import nibuaTrustImage from "../assets/images/products/nibuaTrust.jpeg"
 
 const productDetails = {
   soda: {
@@ -285,12 +286,133 @@ const productDetails = {
 
     hero: {
       title: "Velin Nibua",
-      subtitle: "Real Taste No Waste",
+      subtitle: "Real Lemon Taste, Real Refreshment",
       description:
-        "Tangy lemon flavor crafted for instant refreshment.",
+        "Velin Nibua is a sparkling lemon beverage crafted to deliver the perfect balance of zesty lemon flavour and refreshing fizz. Made with quality ingredients and packed under hygenic conditions, it provides an instant cooling sensation and a delightful citrus experience.",
       bannerImage: nibuaBanner,
       productImage: velinNibuaImage,
     },
+    overview: {
+      title: "Velin-Premium Packaged Drinking Water",
+      subtitle: "Real Lemon Taste, Real Refreshment",
+      description:
+        "Velin Nibua is a sparkling lemon beverage crafted to deliver the perfect balance of zesty lemon flavour and refreshing fizz. Made with quality ingredients and packed under hygenic conditions, it provides an instant cooling sensation and a delightful citrus experience.",
+      image: velinNibuaImage,
+    },
+
+    features: [
+      {
+        icon: "nibuaRefresh",
+        title: "Refreshing Lemon Flavour",
+        description:
+          "Delicious citrus taste that instantly refreshes and energizes.",
+      },
+      { icon:"nibuaSparkle",
+        title: "Sparkling Fizz",
+        description:
+          "Light Carbonation for a lively and enjoyable drinking experience.",
+      },
+      { icon:"nibuaChilled",
+        title: "Best Served Chilled",
+        description:
+          "Delivers maximum freshness and cooling refreshment when served cold.",
+      },
+      { icon:"nibuaHygiene",
+        title: "Hygenically Manufactured",
+        description:
+          "Produced and packed under strict quality and hygiene standards.",
+      },
+      { icon:"water",
+        title: "Consistent Taste & Quality",
+        description:
+          "Every bottle of Velin offers consistent quality and a refreshing taste you can trust.",
+      },
+    ],
+    trustImage: waterTrustImage,
+
+    sizes: [
+      {
+        size: "250 ML",
+      },
+      {
+        size: "500 ML",
+      },
+      {
+        size: "1 Litre"
+      }
+    ],
+
+    usage: [
+      {
+        icon: "waterCar",
+        title: "ON THE GO",
+      },
+      {
+        icon: "waterHome",
+        title: "AT HOME",
+      },
+      {
+        icon: "waterUsers",
+        title: "PARTIES",
+      },
+      {
+        icon: "waterRestaurant",
+        title: "RESTAURANTS",
+      },
+      {
+        icon: "waterDroplet",
+        title: "STAY HYDRATED"
+      },
+      {
+        icon: "waterOffice",
+        title: "OFFICE USAGE"
+      }
+    ],
+
+    certifications: [
+      "Safe & Hygienic",
+      "Trusted by Thousands",
+      "FSSAI Certified",
+      "Made in India",
+    ],
+
+    specifications: [
+      {
+        label: "Product Type",
+        value: "Packaged Drinking Water",
+      },
+      {
+        label: "Category",
+        value: "Water",
+      },
+      {
+        label: "Packaging",
+        value: "Food Grade PET Bottle",
+      },
+      {
+        label: "Quality Standard",
+        value: "Hygienically Processed",
+      },
+      {
+        label: "Appearance",
+        value: "Crystal Clear",
+      },
+      {
+        label: "Usage",
+        value: "Drinking",
+      },
+      {
+        label: "Storage",
+        value: "Store in a Cool & Dry Place",
+      },
+    ],
+
+    gallery: [
+      velinWaterImage,
+      velinWaterImage,
+      velinWaterImage,
+      velinWaterImage,
+    ],
   },
 
   jeera: {
