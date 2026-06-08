@@ -47,7 +47,7 @@ export default function Navbar() {
       >
         <li>
           <a
-            href="#home"
+            href="/"
             onClick={closeMenu}
           >
             Home
@@ -56,7 +56,7 @@ export default function Navbar() {
 
         <li>
           <a
-            href="#about"
+            href="/#about"
             onClick={closeMenu}
           >
             About
@@ -65,7 +65,7 @@ export default function Navbar() {
 
         <li>
           <a
-            href="#products"
+            href="/#products"
             onClick={closeMenu}
           >
             Products
@@ -74,7 +74,7 @@ export default function Navbar() {
 
         <li>
           <a
-            href="#contact"
+            href="/#contact"
             onClick={closeMenu}
           >
             Contact

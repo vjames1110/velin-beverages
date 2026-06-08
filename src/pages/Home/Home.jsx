@@ -35,7 +35,8 @@ export default function Home() {
       </div>
 
       <Stats />
-      <DistributorCTA />
+      <DistributorCTA
+        applyLink="#contact" />
       <ContactSection />
       <Footer />
       <WhatsAppButton />

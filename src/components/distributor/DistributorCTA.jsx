@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import WhatsAppButton from "../common/WhatsappButton";
 import "./DistributorCTA.css";
 
-export default function DistributorCTA() {
+export default function DistributorCTA({
+    applyLink = "/#contact",
+}) {
     return (
         <section className="distributor-section">
             <motion.div
@@ -36,13 +39,17 @@ export default function DistributorCTA() {
 
                         <div className="cta-buttons">
 
-                            <button className="primary-btn">
+                            <a
+                                href={applyLink}
+                                className="primary-btn">
                                 Apply Now
-                            </button>
+                            </a>
 
-                            <button className="secondary-btn">
+                            <a
+                                href="/#products"
+                                className="secondary-btn">
                                 Learn More
-                            </button>
+                            </a>
                         </div>
 
             </motion.div>

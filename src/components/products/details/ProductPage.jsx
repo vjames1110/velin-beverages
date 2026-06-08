@@ -52,7 +52,8 @@ export default function ProductPage({
         }
       />
 
-      <DistributorCTA />
+      <DistributorCTA 
+       applyLink="#product-enquiry"/>
 
       <ProductInquiry
         productName={
