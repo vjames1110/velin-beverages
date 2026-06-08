@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 import "./ProductOverview.css";
 
-export default function ProductOverview({ overview }) {
+export default function ProductOverview({ overview, sizes = [] }) {
   return (
     <section className="product-overview">
-
       <div className="product-overview-container">
-
         <motion.div
           className="product-overview-image"
           initial={{
@@ -24,10 +22,7 @@ export default function ProductOverview({ overview }) {
             duration: 0.8,
           }}
         >
-          <img
-            src={overview.image}
-            alt={overview.title}
-          />
+          <img src={overview.image} alt={overview.title} />
         </motion.div>
 
         <motion.div
@@ -47,51 +42,39 @@ export default function ProductOverview({ overview }) {
             duration: 0.8,
           }}
         >
-          <span className="overview-tag">
-            PRODUCT OVERVIEW
-          </span>
+          <span className="overview-tag">PRODUCT OVERVIEW</span>
 
-          <h2>
-            {overview.title}
-          </h2>
+          <h2>{overview.title}</h2>
 
-          <h3>
-            {overview.subtitle}
-          </h3>
+          <h3>{overview.subtitle}</h3>
 
-          <p>
-            {overview.description}
-          </p>
+          <p>{overview.description}</p>
 
           <div className="overview-highlights">
+            {overview.highlights?.map((item, index) => (
+              <div key={index} className="overview-highlight">
+                <strong>{item.title}</strong>
 
-            <div className="overview-highlight">
-              <strong>Premium Quality</strong>
-              <span>
-                Manufactured using modern production standards.
-              </span>
-            </div>
-
-            <div className="overview-highlight">
-              <strong>Reliable Refreshment</strong>
-              <span>
-                Consistent taste and carbonation every time.
-              </span>
-            </div>
-
-            <div className="overview-highlight">
-              <strong>Trusted Beverage</strong>
-              <span>
-                Preferred by retailers, restaurants, and consumers.
-              </span>
-            </div>
-
+                <span>{item.description}</span>
+              </div>
+            ))}
           </div>
 
+          {sizes.length > 0 && (
+            <div className="overview-sizes">
+              <h4>Available Sizes</h4>
+
+              <div className="overview-size-list">
+                {sizes.map((item, index) => (
+                  <div key={index} className="overview-size-pill">
+                    {item.size}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </motion.div>
-
       </div>
-
     </section>
   );
 }

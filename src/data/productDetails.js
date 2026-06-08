@@ -8,9 +8,10 @@ import velinWaterImage from "../assets/images/products/velin-water.jpeg";
 import velinNibuaImage from "../assets/images/products/velin-nibua.jpeg";
 import velinJeeraImage from "../assets/images/products/velin-jeera.jpeg";
 
-import sodaTrustImage from "../assets/images/products/sodaTrust.jpeg"
-import waterTrustImage from "../assets/images/products/waterTrust.jpeg"
-import nibuaTrustImage from "../assets/images/products/nibuaTrust.jpeg"
+import sodaTrustImage from "../assets/images/products/sodaTrust.jpeg";
+import waterTrustImage from "../assets/images/products/waterTrust.jpeg";
+import nibuaTrustImage from "../assets/images/products/nibuaTrust.jpeg";
+import jeeraTrustImage from "../assets/images/products/jeeraTrust.jpeg";
 
 const productDetails = {
   soda: {
@@ -31,14 +32,37 @@ const productDetails = {
       description:
         "Velin Soda is a premium carbonated beverage designed to deliver a strong, refreshing fizz with every serving. Produced under strict quality standards and hygienic conditions, it is ideal for homes, restaurants, cafes, catering services, mocktails, cocktails, and special occasions.",
       image: velinSodaImage,
+      highlights: [
+        {
+          title: "Premium Quality",
+          description: "Manufactured using modern production standards.",
+        },
+        {
+          title: "Strong Carbonation",
+          description: "Powerful fizz for a refreshing experience.",
+        },
+        {
+          title: "Trusted Beverage",
+          description: "Preferred by restaurants and consumers",
+        },
+      ],
+      sizes: [
+        {
+          size: "500 ml",
+        },
+      ],
     },
+    sizes: [
+      {
+        size: "500 ml",
+      },
+    ],
 
     features: [
       {
         icon: "bolt",
         title: "Strong Carbonation",
-        description:
-          "Powerful fizz for an extra refreshing experience.",
+        description: "Powerful fizz for an extra refreshing experience.",
       },
       {
         icon: "gem",
@@ -49,20 +73,17 @@ const productDetails = {
       {
         icon: "award",
         title: "Premium Quality",
-        description:
-          "Produced using modern manufacturing standards.",
+        description: "Produced using modern manufacturing standards.",
       },
       {
         icon: "sodaShield",
         title: "Hygienically Packed",
-        description:
-          "Processed and packed under strict hygienic conditions.",
+        description: "Processed and packed under strict hygienic conditions.",
       },
       {
         icon: "star",
         title: "Trusted Taste",
-        description:
-          "A refreshing taste trusted by customers and businesses.",
+        description: "A refreshing taste trusted by customers and businesses.",
       },
     ],
     trustImage: sodaTrustImage,
@@ -110,6 +131,10 @@ const productDetails = {
         value: "Carbonated Beverage",
       },
       {
+        label: "Quantity",
+        value: "500 ml"
+      },
+      {
         label: "Category",
         value: "Soda Water",
       },
@@ -139,12 +164,7 @@ const productDetails = {
       },
     ],
 
-    gallery: [
-      velinSodaImage,
-      velinSodaImage,
-      velinSodaImage,
-      velinSodaImage,
-    ],
+    gallery: [velinSodaImage, velinSodaImage, velinSodaImage, velinSodaImage],
   },
 
   water: {
@@ -164,38 +184,32 @@ const productDetails = {
       description:
         "Pure, hygienic and refreshing packaged drinking water processed through advanced purification technology. Every drop is tasted for quality and packed under strict standards.",
       image: velinWaterImage,
+      highlights: [
+        {
+          title: "Advanced Purification",
+          description: "Multi-Stage purification process for superior quality.",
+        },
+        {
+          title: "ISI Certified",
+          description: "Manufactured according to ISI standards.",
+        },
+        {
+          title: "Healthy Hydration",
+          description: "Safe and refreshing drinking water for daily use.",
+        },
+      ],
+      sizes: [
+        {
+          size: "250 ML",
+        },
+        {
+          size: "500 ML",
+        },
+        {
+          size: "1 Litre",
+        },
+      ],
     },
-
-    features: [
-      {
-        icon: "certificate",
-        title: "ISI Certified Packaged Drinking Water",
-        description:
-          "Manufactured in accordance with ISI Standards to ensure the highest level of quality and safey.",
-      },
-      { icon:"filter",
-        title: "Multi-Stage Purification",
-        description:
-          "Advanced multi-stage filtiration removes impurities and ensures clean, safe and healthy drinking water.",
-      },
-      { icon:"waterShield",
-        title: "Ozonized for Safety",
-        description:
-          "Ozonization process keeps the water pure, safe and free from harmful microorganisms.",
-      },
-      { icon:"droplet",
-        title: "Hygienically Packed",
-        description:
-          "Packed in a fully automated and hygenic environment to protect purity and freshness.",
-      },
-      { icon:"water",
-        title: "Consistend Taste & Quality",
-        description:
-          "Every bottle of Velin offers consistent quality and a refreshing taste you can trust.",
-      },
-    ],
-    trustImage: waterTrustImage,
-
     sizes: [
       {
         size: "250 ML",
@@ -204,9 +218,43 @@ const productDetails = {
         size: "500 ML",
       },
       {
-        size: "1 Litre"
-      }
+        size: "1 Litre",
+      },
     ],
+
+    features: [
+      {
+        icon: "certificate",
+        title: "ISI Certified Packaged Drinking Water",
+        description:
+          "Manufactured in accordance with ISI Standards to ensure the highest level of quality and safey.",
+      },
+      {
+        icon: "filter",
+        title: "Multi-Stage Purification",
+        description:
+          "Advanced multi-stage filtiration removes impurities and ensures clean, safe and healthy drinking water.",
+      },
+      {
+        icon: "waterShield",
+        title: "Ozonized for Safety",
+        description:
+          "Ozonization process keeps the water pure, safe and free from harmful microorganisms.",
+      },
+      {
+        icon: "droplet",
+        title: "Hygienically Packed",
+        description:
+          "Packed in a fully automated and hygenic environment to protect purity and freshness.",
+      },
+      {
+        icon: "water",
+        title: "Consistend Taste & Quality",
+        description:
+          "Every bottle of Velin offers consistent quality and a refreshing taste you can trust.",
+      },
+    ],
+    trustImage: waterTrustImage,
 
     usage: [
       {
@@ -227,12 +275,12 @@ const productDetails = {
       },
       {
         icon: "waterDroplet",
-        title: "STAY HYDRATED"
+        title: "STAY HYDRATED",
       },
       {
         icon: "waterOffice",
-        title: "OFFICE USAGE"
-      }
+        title: "OFFICE USAGE",
+      },
     ],
 
     certifications: [
@@ -246,6 +294,10 @@ const productDetails = {
       {
         label: "Product Type",
         value: "Packaged Drinking Water",
+      },
+      {
+        label: "Quantity",
+        value: "250 ml | 500 ml | 1 Litre"
       },
       {
         label: "Category",
@@ -293,12 +345,36 @@ const productDetails = {
       productImage: velinNibuaImage,
     },
     overview: {
-      title: "Velin-Premium Packaged Drinking Water",
+      title: "Velin-Premium Lemon Drink",
       subtitle: "Real Lemon Taste, Real Refreshment",
       description:
         "Velin Nibua is a sparkling lemon beverage crafted to deliver the perfect balance of zesty lemon flavour and refreshing fizz. Made with quality ingredients and packed under hygenic conditions, it provides an instant cooling sensation and a delightful citrus experience.",
       image: velinNibuaImage,
+      highlights: [
+        {
+          title: "Real Lemon Taste",
+          description: "Refreshing Lemon flavour in every sip.",
+        },
+        {
+          title: "Instant Refreshment",
+          description: "Perfect for beating the heat.",
+        },
+        {
+          title: "Premium Ingredients",
+          description: "Made with carefully selected ingredients.",
+        },
+      ],
+      sizes: [
+        {
+          size: "160 ml",
+        },
+      ],
     },
+    sizes: [
+      {
+        size: "160 ml",
+      },
+    ],
 
     features: [
       {
@@ -307,22 +383,26 @@ const productDetails = {
         description:
           "Delicious citrus taste that instantly refreshes and energizes.",
       },
-      { icon:"nibuaSparkle",
+      {
+        icon: "nibuaSparkle",
         title: "Sparkling Fizz",
         description:
           "Light Carbonation for a lively and enjoyable drinking experience.",
       },
-      { icon:"nibuaChilled",
+      {
+        icon: "nibuaChilled",
         title: "Best Served Chilled",
         description:
           "Delivers maximum freshness and cooling refreshment when served cold.",
       },
-      { icon:"nibuaHygiene",
+      {
+        icon: "nibuaHygiene",
         title: "Hygenically Manufactured",
         description:
           "Produced and packed under strict quality and hygiene standards.",
       },
-      { icon:"nibuaQuality",
+      {
+        icon: "nibuaQuality",
         title: "Premium Quality",
         description:
           "Carefully selected ingredients for consistent taste and quality.",
@@ -349,12 +429,12 @@ const productDetails = {
       },
       {
         icon: "nibuaDaily",
-        title: "Daily Refreshment"
+        title: "Daily Refreshment",
       },
       {
         icon: "nibuaParty",
         title: "Party",
-      }
+      },
     ],
 
     certifications: [
@@ -369,11 +449,15 @@ const productDetails = {
     specifications: [
       {
         label: "Product Type",
-        value: "Lemon Drink"
+        value: "Lemon Drink",
+      },
+      {
+        label: "Quantity",
+        value: "160 ml"
       },
       {
         label: "Category",
-        value: "Coldrink"
+        value: "Coldrink",
       },
       {
         label: "Packaging",
@@ -412,10 +496,160 @@ const productDetails = {
       title: "Velin Jeera",
       subtitle: "Desi Jeera Desi Taste",
       description:
-        "The perfect blend of jeera flavor and cooling refreshment.",
+        "Velin Jeera is a refreshing cumin based beverage that brings you the perfect blend of authentic Indian taste and refreshing fizz. Made with carefully selected ingredients and packed under hygenic conditions for your safety and satisfaction.",
       bannerImage: jeeraBanner,
       productImage: velinJeeraImage,
     },
+
+    overview: {
+      title: "Velin-Premium Jeera Drink",
+      subtitle: "Desi Jeera Desi Taste",
+      description:
+        "Velin Jeera is a refreshing cumin based beverage that brings you the perfect blend of authentic Indian taste and refreshing fizz. Made with carefully selected ingredients and packed under hygenic conditions for your safety and satisfaction.",
+      image: velinJeeraImage,
+      highlights: [
+        {
+          title: "Authentic Jeera Flavour",
+          description: "Traditional Jeera taste consumers love.",
+        },
+        {
+          title: "Desi Refreshment",
+          description: "A perfect blend of taste and refreshment.",
+        },
+        {
+          title: "Quality Assured",
+          description: "Manufactured under hygienic conditions.",
+        },
+      ],
+      sizes: [
+        {
+          size: "160 ml",
+        },
+      ],
+    },
+
+    sizes: [
+      {
+        size: "160 ml",
+      },
+    ],
+
+    features: [
+      {
+        icon: "jeeraAuthentic",
+        title: "Authentic Jeera Flavour",
+        description:
+          "Prepared with the rich taste of trditional cumin for a truly desi experience.",
+      },
+      {
+        icon: "jeeraFizz",
+        title: "Refreshing Fizzy Beverage",
+        description:
+          "Light carbonation provides refreshing and enjoyable drinking experience.",
+      },
+      {
+        icon: "jeeraPremium",
+        title: "Premium Quality Ingredients",
+        description:
+          "Manufactured using quality-approved ingredients and modern processing methods.",
+      },
+      {
+        icon: "jeeraHygiene",
+        title: "Hygenically Packed",
+        description:
+          "Produced and packed in a clean and controlled environment.",
+      },
+      {
+        icon: "jeeraChilled",
+        title: "Best Served Chilled",
+        description: "Delivers maximum refreshment and taste when served cold",
+      },
+      {
+        icon: "jeeraTraditional",
+        title: "Traditional Taste, Modern Quality",
+        description:
+          "A perfect blend of Indian heritage and modern beverage standards.",
+      },
+    ],
+    trustImage: jeeraTrustImage,
+
+    usage: [
+      {
+        icon: "jeeraFamily",
+        title: "Family Gatherings",
+      },
+      {
+        icon: "jeeraRestaurants",
+        title: "Restaurants & Hotels",
+      },
+      {
+        icon: "jeeraRetail",
+        title: "Retail Stores & Supermarkets",
+      },
+      {
+        icon: "jeeraTravel",
+        title: "Travel & Outdoor Activities",
+      },
+      {
+        icon: "jeeraDaily",
+        title: "Daily Refreshment",
+      },
+      {
+        icon: "jeeraParty",
+        title: "Party",
+      },
+    ],
+
+    certifications: [
+      "Safe & Hygienic",
+      "Trusted by Thousands",
+      "FSSAI Certified",
+      "Made in India",
+      "Consistent Taste & Quality",
+      "Made with Quality Ingredients",
+    ],
+
+    specifications: [
+      {
+        label: "Product Type",
+        value: "Jeera(Cumin Seed) Drink",
+      },
+      {
+        label: "Quantity",
+        value: "160 ml"
+      },
+      {
+        label: "Category",
+        value: "Coldrink",
+      },
+      {
+        label: "Packaging",
+        value: "Food Grade PET Bottle",
+      },
+      {
+        label: "Quality Standard",
+        value: "Hygienically Processed",
+      },
+      {
+        label: "Appearance",
+        value: "Sparkling Golden Fizz",
+      },
+      {
+        label: "Usage",
+        value: "Drinking",
+      },
+      {
+        label: "Storage",
+        value: "Store in a Cool & Dry Place",
+      },
+    ],
+
+    gallery: [
+      velinJeeraImage,
+      velinJeeraImage,
+      velinJeeraImage,
+      velinJeeraImage,
+    ],
   },
 };
 

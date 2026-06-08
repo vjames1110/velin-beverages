@@ -10,13 +10,19 @@ import {
   FaHandHoldingWater,
   FaWater,
   FaRegLemon,
+  FaSeedling,
+  FaThumbsUp,
 } from "react-icons/fa";
 
 import {
   GiSparkles,
   GiThermometerCold,
   GiThreeLeaves,
-} from "react-icons/gi"
+} from "react-icons/gi";
+
+import {
+  IoSparklesOutline
+} from "react-icons/io5";
 
 import "./ProductFeatures.css";
 
@@ -36,7 +42,13 @@ const featureIcons = {
   nibuaSparkle: GiSparkles,
   nibuaChilled: GiThermometerCold,
   nibuaHygiene: FaShieldAlt,
-  nibuaQuality: GiThreeLeaves
+  nibuaQuality: GiThreeLeaves,
+  jeeraAuthentic: FaSeedling,
+  jeeraFizz: IoSparklesOutline,
+  jeeraPremium: GiThreeLeaves,
+  jeeraHygiene: FaShieldAlt,
+  jeeraChilled: GiThermometerCold,
+  jeeraTraditional: FaThumbsUp
 };
   
 

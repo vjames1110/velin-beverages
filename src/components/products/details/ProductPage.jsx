@@ -27,6 +27,7 @@ export default function ProductPage({
 
       <ProductOverview
         overview={product.overview}
+        sizes={product.sizes}
       />
 
       <ProductFeatures

@@ -50,7 +50,13 @@ const usageIcons = {
   nibuaRetail: FaShoppingCart,
   nibuaTravel: FaPlane,
   nibuaDaily: SiFresh,
-  nibuaParty: LuPartyPopper
+  nibuaParty: LuPartyPopper,
+  jeeraFamily: IoIosPeople,
+  jeeraRestaurants: IoIosRestaurant,
+  jeeraRetail: FaShoppingCart,
+  jeeraTravel: FaPlane,
+  jeeraDaily: SiFresh,
+  jeeraParty: LuPartyPopper,
 };
 
 export default function ProductUsage({
