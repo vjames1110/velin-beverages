@@ -204,3 +204,17 @@
     width: 100%;
   }
 }
+
+.form-message {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-message.success {
+  color: #0f9d58;
+}
+
+.form-message.error {
+  color: #d93025;
+}
