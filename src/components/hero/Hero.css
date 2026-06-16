@@ -1,7 +1,8 @@
-.hero{
-  position:relative;
-  height:100vh;
-  overflow:hidden;
+.hero {
+  position: relative;
+  min-height: 700px;
+  height: 75vh;
+  overflow: hidden;
 }
 
 .hero-slide{
@@ -115,4 +116,93 @@
 
 .dot.active{
   background:white;
+}
+
+/* Large Desktop */
+.hero {
+  position: relative;
+  height: 75vh;
+  min-height: 650px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .hero {
+    height: 70vh;
+    min-height: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .hero-slide {
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    height: 55vh;
+    min-height: 450px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .slider-dots {
+    bottom: 20px;
+  }
 }

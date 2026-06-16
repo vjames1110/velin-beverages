@@ -1,7 +1,7 @@
-import sodaBanner from "../assets/images/hero/velin-soda-banner.png";
-import waterBanner from "../assets/images/hero/velin-water-banner.png";
-import nibuaBanner from "../assets/images/hero/velin-nibua-banner.png";
-import jeeraBanner from "../assets/images/hero/velin-jeera-banner.png";
+import sodaBanner from "../assets/images/products/soda-1920x700.png";
+import waterBanner from "../assets/images/products/water-1920x700.png";
+import nibuaBanner from "../assets/images/products/nibua-1920x700.png";
+import jeeraBanner from "../assets/images/products/jeera-1920x700.png";
 
 import velinSodaImage from "../assets/images/products/velin-soda.jpeg";
 import velinWaterImage from "../assets/images/products/velin-water.jpeg";
