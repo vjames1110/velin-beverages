@@ -9,10 +9,7 @@ export default function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent(
-        (prev) =>
-          (prev + 1) % heroSlides.length
-      );
+      setCurrent((prev) => (prev + 1) % heroSlides.length);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -22,40 +19,47 @@ export default function Hero() {
 
   return (
     <section className="hero">
-
-      <AnimatePresence mode="wait">
-
+      <AnimatePresence mode="sync">
         <motion.div
           key={slide.id}
           className="hero-slide"
-
           style={{
-            backgroundImage:
-              `url(${slide.image})`,
+            backgroundImage: `url(${slide.image})`,
           }}
-
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-
+          initial={{
+            opacity: 0,
+            scale: 1.05,
+          }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+          }}
+          exit={{
+            opacity: 0,
+            scale: 1.03,
+          }}
           transition={{
             duration: 1,
+            ease: "easeInOut",
           }}
         >
-
           <div className="hero-overlay"></div>
 
           <div className="hero-content">
-
             <motion.h1
               key={slide.title}
               initial={{
                 opacity: 0,
-                y: 40,
+                y: 50,
+                filter: "blur(8px)",
               }}
               animate={{
                 opacity: 1,
                 y: 0,
+                filter: "blur(0px)",
+              }}
+              transition={{
+                duration: 0.8,
               }}
             >
               {slide.title}
@@ -90,41 +94,27 @@ export default function Hero() {
             </motion.p>
 
             <div className="hero-buttons">
-
-              <button>
+              <a href="#products" className="hero-btn">
                 Explore Products
-              </button>
+              </a>
 
-              <button className="outline">
+              <a href="#contact" className="hero-btn outline">
                 Become Distributor
-              </button>
-
+              </a>
             </div>
-
           </div>
-
         </motion.div>
-
       </AnimatePresence>
 
       <div className="slider-dots">
-
         {heroSlides.map((_, index) => (
           <button
             key={index}
-            className={
-              current === index
-                ? "dot active"
-                : "dot"
-            }
-            onClick={() =>
-              setCurrent(index)
-            }
+            className={current === index ? "dot active" : "dot"}
+            onClick={() => setCurrent(index)}
           />
         ))}
-
       </div>
-
     </section>
   );
 }
