@@ -157,3 +157,12 @@
   color:
     rgba(255,255,255,.65);
 }
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #00c2ff;
+}

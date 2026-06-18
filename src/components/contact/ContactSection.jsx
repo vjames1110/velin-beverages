@@ -13,7 +13,6 @@ import { sendContactEmail } from "../../services/emailService";
 import "./Contact.css";
 
 export default function ContactSection() {
-
   const initialFormState = {
     from_name: "",
     reply_to: "",
@@ -32,9 +31,7 @@ export default function ContactSection() {
     message: "",
   });
 
-
   const handleChange = (e) => {
-
     const { name, value } = e.target;
 
     setFormData((previousData) => ({
@@ -43,10 +40,8 @@ export default function ContactSection() {
     }));
   };
 
-
   const handleSubmit = async (e) => {
-
-    console.log("Form Submitted")
+    console.log("Form Submitted");
 
     e.preventDefault();
 
@@ -58,7 +53,6 @@ export default function ContactSection() {
     });
 
     try {
-
       await sendContactEmail(formData);
 
       setStatus({
@@ -68,36 +62,21 @@ export default function ContactSection() {
       });
 
       setFormData(initialFormState);
-
     } catch (error) {
-
-      console.error(
-        "Contact email error:",
-        error
-      );
+      console.error("Contact email error:", error);
 
       setStatus({
         type: "error",
-        message:
-          "Something went wrong. Please try again after some time.",
+        message: "Something went wrong. Please try again after some time.",
       });
-
     } finally {
-
       setLoading(false);
-
     }
-
   };
 
-
   return (
-    <section
-      id="contact"
-      className="contact-section"
-    >
+    <section id="contact" className="contact-section">
       <div className="contact-container">
-
         {/* Left Side */}
 
         <motion.div
@@ -114,51 +93,47 @@ export default function ContactSection() {
             once: true,
           }}
         >
+          <span className="section-tag">CONTACT US</span>
 
-          <span className="section-tag">
-            CONTACT US
-          </span>
-
-          <h2>
-            Let's Connect
-          </h2>
+          <h2>Let's Connect</h2>
 
           <p>
-            Have questions about our products,
-            distribution network, or business
+            Have questions about our products, distribution network, or business
             opportunities? Get in touch with us.
           </p>
 
           <div className="info-item">
             <FaPhoneAlt />
-            <span>
-              +91 92381 08801
-            </span>
+            <span>+91 92381 08801</span>
           </div>
 
           <div className="info-item">
             <FaEnvelope />
-            <span>
+            <a href="mailto:pkpureindustries@gmail.com">
               pkpureindustries@gmail.com
-            </span>
+            </a>
+          </div>
+
+          <div className="info-item">
+            <FaEnvelope />
+            <a href="mailto:info@velinwater.com">info@velinwater.com</a>
+          </div>
+
+          <div className="info-item">
+            <FaEnvelope />
+            <a href="mailto:sales@velinwater.com">sales@velinwater.com</a>
           </div>
 
           <div className="info-item">
             <FaMapMarkerAlt />
-            <span>
-              Jabalpur, India
-            </span>
+            <span>Jabalpur, India</span>
           </div>
 
           <div className="info-item">
             <FaClock />
-            <span>
-              Mon - Sat | 9 AM - 6 PM
-            </span>
+            <span>Mon - Sat | 9 AM - 6 PM</span>
           </div>
-
         </motion.div>
-
 
         {/* Right Side */}
 
@@ -176,12 +151,7 @@ export default function ContactSection() {
             once: true,
           }}
         >
-
-          <form
-            className="contact-form"
-            onSubmit={handleSubmit}
-          >
-
+          <form className="contact-form" onSubmit={handleSubmit}>
             <input
               type="text"
               name="from_name"
@@ -235,31 +205,16 @@ export default function ContactSection() {
               required
             />
 
-
             {status.message && (
-              <p
-                className={`form-message ${status.type}`}
-              >
-                {status.message}
-              </p>
+              <p className={`form-message ${status.type}`}>{status.message}</p>
             )}
 
-
-            <button
-              type="submit"
-              disabled={loading}
-            >
-              {loading
-                ? "Sending..."
-                : "Send Enquiry"}
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send Enquiry"}
             </button>
-
           </form>
-
         </motion.div>
-
       </div>
-
     </section>
   );
 }
